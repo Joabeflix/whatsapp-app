@@ -1,7 +1,4 @@
 
-
-
-
 def funcao_numeros_recentes():
 
     lista = []
@@ -14,4 +11,8 @@ def funcao_numeros_recentes():
             print(linha.strip())
 
     return lista
+
+
+for numero in funcao_numeros_recentes():
+    print(numero)
 

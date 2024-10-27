@@ -17,6 +17,8 @@ def funcao_numeros_recentes():
     return lista
 
 
+
+
 logo_tk = ImageTk.PhotoImage(file='logo.png')
 tela.iconphoto(False, logo_tk)
 
