@@ -6,5 +6,4 @@ hora_atual2 = hora_atual[:2]
 minuto = hora_atual[3:5]
 print(hora_atual2)
 print(minuto)
-# Comentário de teste github
-
+# Comentário de teste
