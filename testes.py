@@ -1,9 +1,11 @@
-from datetime import datetime
+import pywhatkit as kit
 
-hora_atual = datetime.now().strftime("%H:%M:%S")
-print(hora_atual)
-hora_atual2 = hora_atual[:2]
-minuto = hora_atual[3:5]
-print(hora_atual2)
-print(minuto)
-# Comentário de teste
+def enviar_mensagem(mensagem, numero_telefone, hora, minuto):
+    numero_usar = f'+55{numero_telefone}'
+    kit.sendwhatmsg(numero_usar, mensagem, hora, minuto)
+
+
+enviar_mensagem('teste', '27997255922', 21, 30)
+
+
+

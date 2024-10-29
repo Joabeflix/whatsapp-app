@@ -10,9 +10,8 @@ import datetime
 # mostrar mensagem = messagebox.showinfo('Mensagem!')
 
 def enviar_mensagem(mensagem, numero_telefone, hora, minuto):
-    numero_usar = f'+55{numero_de_telefone}'
+    numero_usar = f'+55{numero_telefone}'
     kit.sendwhatmsg(numero_usar, mensagem, hora, minuto)
-
     return 0
 
 def definir_minutos(minutos):
