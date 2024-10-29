@@ -69,21 +69,19 @@ tk.Label(tela, text="Número de telefone:").place(x=8, y=0)
 numero_de_telefone = tk.Entry(tela, width=30)
 numero_de_telefone.place(x=8, y=20)
 
+
 tk.Label(tela, text="Tempo (minutos)").place(x=200, y=0)
 tempo_minutos = tk.Entry(tela, width=8)
 tempo_minutos.place(x=218, y=20)
 
+
+tk.Label(tela, text="Descreva a mensagem abaixo:").place(x=8, y=45)
 caixa_de_mensagem = tk.Text(tela, width=35, height=6)
-caixa_de_mensagem.place(x=8, y=100)
+caixa_de_mensagem.place(x=8, y=65)
 
-botao_iniciar = tk.Button(tela, text='Programar Mensagem', command=app)
-botao_iniciar.place(x=90, y=360)
-
-
-
-
-
-
+botao_iniciar = ttk.Button(tela, text='Programar Mensagem', command=app, bootstyle=SUCCESS)
+botao_iniciar.place(x=90, y=186)
+botao_iniciar.configure()
 
 
 
@@ -91,5 +89,5 @@ botao_iniciar.place(x=90, y=360)
 # menu_de_opcoes_contatos.place(x=135, y=45)
 
 tela.title('Mensagem Prog')
-tela.geometry('300x400')
+tela.geometry('320x225')
 tela.mainloop()
