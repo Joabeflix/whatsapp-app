@@ -46,9 +46,6 @@ def app():
     else:
         messagebox.showinfo(title='Erro', message='Você não digitou um número válido', icon='error')
 
-
-
-
 tela = tk.Tk()
 """
 def funcao_numeros_recentes():
@@ -82,11 +79,6 @@ caixa_de_mensagem.place(x=8, y=65)
 botao_iniciar = ttk.Button(tela, text='Programar Mensagem', command=app, bootstyle=SUCCESS)
 botao_iniciar.place(x=90, y=186)
 botao_iniciar.configure()
-
-
-
-# menu_de_opcoes_contatos = tk.OptionMenu(tela, var_selecao, contatos_recentes[0], *contatos_recentes,)
-# menu_de_opcoes_contatos.place(x=135, y=45)
 
 tela.title('Mensagem Prog')
 tela.geometry('320x225')
